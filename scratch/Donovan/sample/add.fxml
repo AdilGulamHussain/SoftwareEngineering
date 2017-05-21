@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.logic.AddBookingController">
+    <children>
+        <TextField fx:id="customerID" alignment="CENTER" layoutX="112.0" layoutY="58.0" promptText="CustomerID" />
+        <TextField fx:id="manufacturer" alignment="CENTER" layoutX="112.0" layoutY="96.0" promptText="Manufacturer" />
+        <TextField fx:id="registration" alignment="CENTER" layoutX="112.0" layoutY="135.0" promptText="Registration" />
+        <Text layoutX="10.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer ID" wrappingWidth="78.87109375">
+            <font>
+                <Font name="Cambria" size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="10.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle manufacturer" wrappingWidth="97.44629114866257">
+            <font>
+                <Font name="Cambria" size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="10.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle registration" wrappingWidth="84.44433510303497">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <TextField fx:id="date" alignment="CENTER" layoutX="112.0" layoutY="174.0" promptText="Date" />
+        <Text layoutX="10.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="55.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Booking" textAlignment="CENTER" wrappingWidth="239.404296875">
+            <font>
+                <Font name="Cambria" size="36.0" />
+            </font>
+        </Text>
+        <TextField fx:id="mechanic" alignment="CENTER" layoutX="112.0" layoutY="213.0" promptText="Mechanic" />
+        <Text layoutX="10.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mechanic name">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="10.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="??">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <TextField fx:id="abc" alignment="CENTER" layoutX="112.0" layoutY="252.0" />
+        <Button fx:id="addNewBooking" layoutX="112.0" layoutY="436.0" mnemonicParsing="false" text="Add Booking" />
+        <Button fx:id="cancel" layoutX="259.0" layoutY="436.0" mnemonicParsing="false" onAction="#cancelNewBooking" text="Cancel" />
+        <Text layoutX="10.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booking Type">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <TextField fx:id="bType" alignment="CENTER" layoutX="112.0" layoutY="292.0" promptText="Type" />
+        <TextField fx:id="mileage" alignment="CENTER" layoutX="112.0" layoutY="331.0" prefHeight="42.0" prefWidth="224.0" promptText="Mileage" />
+        <TextField fx:id="aType" alignment="CENTER" layoutX="112.0" layoutY="373.0" prefHeight="42.0" prefWidth="224.0" promptText="Account Type" />
+        <Text layoutX="7.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mileage">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="7.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Type">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+    </children>
+</Pane>

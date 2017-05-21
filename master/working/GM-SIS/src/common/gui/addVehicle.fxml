@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vehicleRecords.AddVehicleController">
+   <children>
+      <SplitPane dividerPositions="0.49056603773584906" layoutX="121.0" layoutY="103.0" maxHeight="400.0" maxWidth="850.0" minHeight="400.0" minWidth="850.0" prefHeight="400.0" prefWidth="850.0" scaleShape="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="vehicleTemplateTable" layoutX="7.0" layoutY="7.0" prefHeight="353.0" prefWidth="413.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="Make" prefWidth="130.0" text="Make" />
+                      <TableColumn fx:id="Model" prefWidth="94.0" text="Model" />
+                        <TableColumn fx:id="Engine" prefWidth="95.0" text="Engine Size" />
+                        <TableColumn fx:id="FuelType" prefWidth="93.0" text="Fuel Type" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <padding>
+                  <Insets top="45.0" />
+               </padding>
+               <children>
+                  <Text layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration Number" textAlignment="RIGHT" wrappingWidth="192.13671875" />
+                  <TextField fx:id="NumberIn" layoutX="215.0" layoutY="49.0" />
+                  <Text layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Model" textAlignment="RIGHT" wrappingWidth="192.13671875" />
+                  <TextField fx:id="ModelIn" layoutX="215.0" layoutY="119.0" />
+                  <Text layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Make" textAlignment="RIGHT" wrappingWidth="192.13671875" />
+                  <TextField fx:id="MakeIn" layoutX="215.0" layoutY="149.0" />
+                  <Text layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Engine Size" textAlignment="RIGHT" wrappingWidth="192.13671875" />
+                  <TextField fx:id="EngineIn" layoutX="215.0" layoutY="179.0" />
+                  <Text layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fuel Type" textAlignment="RIGHT" wrappingWidth="192.13671875" />
+                  <TextField fx:id="FuelIn" layoutX="215.0" layoutY="209.0" />
+                  <Text layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Colour" textAlignment="RIGHT" wrappingWidth="192.13671875" />
+                  <TextField fx:id="ColourIn" layoutX="215.0" layoutY="239.0" />
+                  <Text layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MOT Renewal Date" textAlignment="RIGHT" wrappingWidth="192.13671875" />
+                  <TextField fx:id="MOTIn" layoutX="215.0" layoutY="269.0" />
+                  <Text layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Milleage" textAlignment="RIGHT" wrappingWidth="192.13671875" />
+                  <TextField fx:id="MileIn" layoutX="215.0" layoutY="299.0" />
+                  <Button layoutX="215.0" layoutY="343.0" mnemonicParsing="false" onAction="#add" text="ADD VEHICLE" />
+                  <Button fx:id="refresh" layoutX="61.0" layoutY="343.0" mnemonicParsing="false" onAction="#refresh" text="Import from template" />
+                  <Text layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer ID" textAlignment="RIGHT" wrappingWidth="192.13671875" />
+                  <TextField fx:id="CustomerIn" layoutX="215.0" layoutY="79.0" />
+                  <Text layoutX="67.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please fill up all fields to add new vehicle">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Text layoutX="20.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select template to import (Optional)">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

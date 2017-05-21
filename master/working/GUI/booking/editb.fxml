@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.logic.EditBookingController">
+    <children>
+        <TextField fx:id="ID" alignment="CENTER" layoutX="112.0" layoutY="138.0" promptText="ID" />
+        <TextField fx:id="reg" alignment="CENTER" layoutX="112.0" layoutY="216.0" promptText="Registration" />
+        <TextField fx:id="mechanicName" alignment="CENTER" layoutX="112.0" layoutY="255.0" promptText="Name" />
+        <Text layoutX="13.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booking ID" wrappingWidth="78.87109375">
+            <font>
+                <Font name="Cambria" size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="10.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle Registration" wrappingWidth="97.44629114866257">
+            <font>
+                <Font name="Cambria" size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="10.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mechanic" wrappingWidth="84.44433510303497">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <TextField fx:id="duration" alignment="CENTER" layoutX="112.0" layoutY="294.0" promptText="Time" />
+        <Text layoutX="10.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duration">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="55.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Booking" textAlignment="CENTER" wrappingWidth="239.404296875">
+            <font>
+                <Font name="Cambria" size="36.0" />
+            </font>
+        </Text>
+        <TextField fx:id="bookingT" alignment="CENTER" layoutX="112.0" layoutY="333.0" promptText="Type" />
+        <Text layoutX="10.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booking Type">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="10.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <TextField fx:id="Date" alignment="CENTER" layoutX="112.0" layoutY="372.0" promptText="Date" />
+        <Button fx:id="edit" layoutX="112.0" layoutY="556.0" mnemonicParsing="false" onAction="#editBooking" text="Edit Booking" />
+        <Button fx:id="cancel" layoutX="259.0" layoutY="556.0" mnemonicParsing="false" onAction="#cancelEditBooking" text="Cancel" />
+        <Text layoutX="10.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SPC">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <TextField fx:id="Spc" alignment="CENTER" layoutX="112.0" layoutY="412.0" promptText="SPC" />
+        <TextField fx:id="part" alignment="CENTER" layoutX="112.0" layoutY="451.0" promptText="Part" />
+        <TextField fx:id="complete" alignment="CENTER" layoutX="112.0" layoutY="493.0" promptText="Complete" />
+        <Text layoutX="7.0" layoutY="479.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Part">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="7.0" layoutY="518.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Complete">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <TextField fx:id="fName" alignment="CENTER" layoutX="112.0" layoutY="60.0" promptText="First name" />
+        <TextField fx:id="sName" alignment="CENTER" layoutX="112.0" layoutY="99.0" promptText="Surname" />
+        <TextField fx:id="manufacturer" alignment="CENTER" layoutX="112.0" layoutY="177.0" promptText="Manufactuurer" />
+        <Text layoutX="13.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name" wrappingWidth="78.87109375">
+            <font>
+                <Font name="Cambria" size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="13.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Surname" wrappingWidth="78.87109375">
+            <font>
+                <Font name="Cambria" size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="10.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle manufacturer" wrappingWidth="97.44629114866257">
+            <font>
+                <Font name="Cambria" size="14.0" />
+            </font>
+        </Text>
+    </children>
+</Pane>

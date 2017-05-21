@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sqlite-jdbc-3.16.13">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/GM-SIS/out/production/GM-SIS/resources/sqlite-jdbc-3.16.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

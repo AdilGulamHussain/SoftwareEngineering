@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane minHeight="0.0" minWidth="0.0" prefHeight="507.0" prefWidth="897.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.logic.RepairController">
+    <children>
+        <TableView fx:id="customerTable" layoutX="12.0" layoutY="170.0" prefHeight="267.0" prefWidth="877.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="92.00001525878906" text="Customer ID" />
+                <TableColumn fx:id="vReg" prefWidth="90.0" text="Vehicle Reg" />
+                <TableColumn fx:id="mechanic" text="Mechanic" />
+                <TableColumn fx:id="duruation" prefWidth="146.0" text="Duruation" />
+                <TableColumn fx:id="bType" prefWidth="75.0" text="Booking Type" />
+                <TableColumn fx:id="pDate" prefWidth="126.0" text="Past Date" />
+                <TableColumn fx:id="fDate" prefWidth="154.0" text="Future Date" />
+                <TableColumn fx:id="mileage" prefWidth="112.0" text="Mileage" />
+
+            </columns>
+        </TableView>
+        <Text layoutX="22.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diagnosis and Repairs / Scheduled Maintenance">
+            <font>
+                <Font name="Cambria" size="36.0" />
+            </font>
+        </Text>
+
+        <Button layoutX="757.0" layoutY="109.0" mnemonicParsing="false" text="Enter" />
+        <Button fx:id="addbooking1" layoutX="22.0" layoutY="454.0" mnemonicParsing="false" onAction="#addB" text="Add" />
+        <Button fx:id="editbooking1" layoutX="126.0" layoutY="454.0" mnemonicParsing="false" onAction="#editB" text="Edit" />
+        <Button fx:id="deletebooking1" layoutX="229.0" layoutY="454.0" mnemonicParsing="false" onAction="#deleteB" text="Delete" />
+    </children>
+</Pane>

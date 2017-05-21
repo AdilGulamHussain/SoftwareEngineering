@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Accordion fx:id="mainAccordion" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PartsLogic.MainController">
+    <panes>
+        <TitledPane animated="false" prefHeight="446.0" prefWidth="693.0" text="Stock">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="418.0" prefWidth="698.0">
+                    <children>
+                        <TableView fx:id="partsTable" layoutX="23.0" layoutY="14.0" prefHeight="311.0" prefWidth="623.0">
+                            <columns>
+                                <TableColumn fx:id="columnpartID" prefWidth="75.0" text="Part ID" />
+                                <TableColumn fx:id="columnName" prefWidth="127.0" text="Name" />
+                                <TableColumn fx:id="columnDescription" prefWidth="259.0" text="Description" />
+                                <TableColumn fx:id="columnStock" prefWidth="74.0" text="Stock" />
+                                <TableColumn fx:id="columnCost" prefWidth="87.0" text="Cost" />
+                            </columns>
+                        </TableView>
+                  <Button layoutX="26.0" layoutY="373.0" mnemonicParsing="false" onAction="#add" text="Add Part" />
+                  <Button layoutX="556.0" layoutY="373.0" mnemonicParsing="false" onAction="#delete" text="Delete Part" />
+                  <Button layoutX="335.0" layoutY="373.0" mnemonicParsing="false" onAction="#edit" text="Edit Part" />
+                  <Button layoutX="23.0" layoutY="325.0" mnemonicParsing="false" onAction="#refresh" prefHeight="27.0" prefWidth="623.0" text="Refresh" />
+                    </children></AnchorPane>
+            </content>
+        </TitledPane>
+      <TitledPane animated="false" text="Parts Installed">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="500.0" prefWidth="800.0">
+               <children>
+                  <TableView fx:id="InstalledTable" layoutX="50.0" layoutY="14.0" prefHeight="311.0" prefWidth="590.0">
+                    <columns>
+                      <TableColumn fx:id="columnPartID" prefWidth="75.0" text="Part ID" />
+                      <TableColumn fx:id="columnRegID" prefWidth="89.0" text="Vehicle Reg" />
+                        <TableColumn fx:id="columnBookingID" prefWidth="100.0" text="Booking ID" />
+                        <TableColumn fx:id="columnInstallation" prefWidth="181.0" text="Installation Date" />
+                        <TableColumn fx:id="columnWarrantyExp" prefWidth="145.0" text="Warranty expiration" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="35.0" layoutY="371.0" mnemonicParsing="false" onAction="#add1" text="Add Part" />
+                  <Button layoutX="309.0" layoutY="371.0" mnemonicParsing="false" onAction="#edit1" text="Edit Part" />
+                  <Button layoutX="542.0" layoutY="371.0" mnemonicParsing="false" onAction="#delete1" text="Delete part" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+        <TitledPane animated="false" text="Order Parts">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <TableView fx:id="OrderTable" layoutX="79.0" layoutY="14.0" prefHeight="311.0" prefWidth="493.0">
+                            <columns>
+                                <TableColumn fx:id="columnOrderID" prefWidth="102.0" text="Order ID" />
+                                <TableColumn fx:id="columnPartID1" prefWidth="113.0" text="Part ID" />
+                        <TableColumn fx:id="columnDelivery" prefWidth="176.0" text="Expected Delivery" />
+                        <TableColumn fx:id="columnQuantity" prefWidth="101.0" text="Quantity" />
+                            </columns>
+                        </TableView>
+                        <Button layoutX="25.0" layoutY="377.0" mnemonicParsing="false" onAction="#order" prefHeight="26.0" prefWidth="109.0" text="New Order" />
+                  <Button layoutX="271.0" layoutY="377.0" mnemonicParsing="false" onAction="#editOrder" prefHeight="26.0" prefWidth="110.0" text="Edit Order" />
+                  <Button layoutX="513.0" layoutY="377.0" mnemonicParsing="false" onAction="#delete2" prefHeight="26.0" prefWidth="118.0" text="Delete Order" />
+                    </children></AnchorPane>
+            </content>
+        </TitledPane>
+    </panes>
+</Accordion>

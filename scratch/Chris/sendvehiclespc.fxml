@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="277.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.logic.AddCustomerController">
+   <children>
+      <TextField fx:id="firstName" alignment="CENTER" layoutX="112.0" layoutY="59.0" promptText="AB01 CDE" />
+      <TextField fx:id="address" alignment="CENTER" layoutX="112.0" layoutY="100.0" promptText="Model" />
+      <Text layoutX="9.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration No." wrappingWidth="97.87109375">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="10.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Model">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="postcode" alignment="CENTER" layoutX="112.0" layoutY="139.0" promptText="Make" />
+      <Text layoutX="10.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Make">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="18.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Send Vehicle" textAlignment="CENTER" wrappingWidth="239.404296875">
+         <font>
+            <Font name="Cambria" size="36.0" />
+         </font>
+      </Text>
+      <TextField fx:id="phone" alignment="CENTER" layoutX="112.0" layoutY="178.0" promptText="Engine Size" />
+      <Text layoutX="10.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Engine Size">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="10.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mileage">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="email" alignment="CENTER" layoutX="112.0" layoutY="217.0" promptText="Mileage" />
+      <Button layoutX="172.0" layoutY="413.0" mnemonicParsing="false" onAction="#add" text="Send Vehicle" />
+      <Button layoutX="13.0" layoutY="413.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+      <TextField fx:id="phone1" alignment="CENTER" layoutX="113.0" layoutY="331.0" promptText="Delivery Date" />
+      <Text layoutX="11.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery Date">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="11.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return Date">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="email1" alignment="CENTER" layoutX="113.0" layoutY="369.0" promptText="Return Date" />
+      <TextField fx:id="phone2" alignment="CENTER" layoutX="113.0" layoutY="253.0" promptText="01/01/01" />
+      <Text layoutX="11.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Service">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="11.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Colour">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="email2" alignment="CENTER" layoutX="113.0" layoutY="292.0" promptText="Colour" />
+   </children>
+</Pane>

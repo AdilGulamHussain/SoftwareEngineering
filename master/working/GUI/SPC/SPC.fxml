@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane minHeight="0.0" minWidth="0.0" prefHeight="512.0" prefWidth="1210.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.logic.SPCController">
+    <children>
+        <TableView layoutX="12.0" layoutY="85.0" prefHeight="160.0" prefWidth="1170.0">
+            <columns>
+                <TableColumn fx:id="spcID" prefWidth="183.0" text="SPC ID" />
+                <TableColumn fx:id="spcName" prefWidth="117.0" text="SPC Name" />
+                <TableColumn fx:id="spcEmail" prefWidth="237.0" text="Email" />
+                <TableColumn fx:id="spcPhone" prefWidth="89.0" text="Phone" />
+                <TableColumn fx:id="spcPostcode" prefWidth="86.0" text="Postcode" />
+            <TableColumn fx:id="spcAdress" prefWidth="164.0" text="Address" />
+            </columns>
+        </TableView>
+        <Text layoutX="22.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Specialist Repairs">
+            <font>
+                <Font name="Cambria" size="36.0" />
+            </font>
+        </Text>
+        <TextField fx:id="search_bar" layoutX="1033.0" layoutY="45.0" onAction="#search" promptText="Search" />
+        <Button layoutX="23.0" layoutY="259.0" mnemonicParsing="false" onAction="#add" text="Add SPC" />
+        <Button layoutX="102.0" layoutY="259.0" mnemonicParsing="false" onAction="#edit" text="Edit" />
+        <Button layoutX="153.0" layoutY="259.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+        <TabPane layoutX="16.0" layoutY="296.0" prefHeight="199.0" prefWidth="1170.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Vehicle">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView fx:id="vehicleTable" layoutY="-1.0" prefHeight="173.0" prefWidth="1170.0">
+                                    <columns>
+                                        <TableColumn fx:id="reg" prefWidth="137.0" text="Vehicle Registration" />
+                                        <TableColumn fx:id="model" minWidth="9.0" prefWidth="55.0" text="Model" />
+                                        <TableColumn fx:id="make" minWidth="0.0" prefWidth="52.0" text="Make" />
+                                        <TableColumn fx:id="size" minWidth="4.0" prefWidth="77.0" text="Engine Size" />
+                                        <TableColumn fx:id="fuel" prefWidth="59.0" text="Fuel Type" />
+                                        <TableColumn fx:id="colour" minWidth="0.0" prefWidth="50.0" text="Colour" />
+                                        <TableColumn fx:id="last" prefWidth="122.0" text="Last Service Change" />
+                                        <TableColumn fx:id="mile" prefWidth="110.0" text="Current Mileage" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Parts">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView fx:id="partTable" prefHeight="173.0" prefWidth="1170.0">
+                                    <columns>
+                                        <TableColumn fx:id="vehicleID" prefWidth="75.0" text="Vehicle" />
+                                        <TableColumn fx:id="partBookingID" prefWidth="75.0" text="Booking" />
+                                        <TableColumn fx:id="name" prefWidth="75.0" text="Name" />
+                                        <TableColumn fx:id="desc" prefWidth="75.0" text="Description" />
+                                        <TableColumn fx:id="cost" prefWidth="75.0" text="Cost" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Bill">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView fx:id="billTable" layoutX="-5.0" prefHeight="172.0" prefWidth="1170.0">
+                                    <columns>
+                                        <TableColumn fx:id="billID" prefWidth="75.0" text="ID" />
+                                        <TableColumn fx:id="billBookingID" prefWidth="75.0" text="Booking" />
+                              <TableColumn fx:id="billBookingID1" prefWidth="75.0" text="SPC Charge" />
+                                        <TableColumn fx:id="price" prefWidth="75.0" text="Total Cost" />
+                                        <TableColumn fx:id="paid" prefWidth="106.0" text="Amount Paid" />
+                                        <TableColumn fx:id="balance" prefWidth="72.0" text="Balance" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            <Tab text="SPCParts">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="billTable1" layoutX="-5.0" prefHeight="172.0" prefWidth="1180.0">
+                           <columns>
+                              <TableColumn fx:id="spcPartID" prefWidth="75.0" text="spcPartID" />
+                              <TableColumn fx:id="spcPartName" prefWidth="97.0" text="spcPartName" />
+                              <TableColumn fx:id="spcPartDescription" prefWidth="128.0" text="spcPartDescription" />
+                              <TableColumn fx:id="customerID" prefWidth="79.0" text="customerID" />
+                              <TableColumn fx:id="firstName" prefWidth="70.0" text="firstName" />
+                              <TableColumn fx:id="lastName" prefWidth="88.0" text="lastName" />
+                              <TableColumn fx:id="spcName" prefWidth="99.0" text="spcName" />
+                              <TableColumn fx:id="deliveryDate" prefWidth="118.0" text="deliveryDate" />
+                              <TableColumn fx:id="returnDate" prefWidth="95.0" text="returnDate" />
+                              <TableColumn fx:id="repairCost" prefWidth="105.0" text="repairCost" />
+                              <TableColumn fx:id="returnStatus" prefWidth="105.0" text="returnStatus" />
+                              <TableColumn fx:id="spcID" prefWidth="105.0" text="spcID" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="SPCVehicle">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="billTable12" layoutX="-5.0" prefHeight="172.0" prefWidth="1180.0">
+                           <columns>
+                              <TableColumn fx:id="spcVehicleID" prefWidth="87.0" text="spcVehicleID" />
+                              <TableColumn fx:id="vehicleRegistration" prefWidth="121.0" text="vehicleRegistration" />
+                              <TableColumn fx:id="customerID1" prefWidth="93.0" text="customerID" />
+                              <TableColumn fx:id="firstName1" prefWidth="117.0" text="firstName" />
+                              <TableColumn fx:id="lastName1" prefWidth="129.0" text="lastName" />
+                              <TableColumn fx:id="spcName1" prefWidth="111.0" text="spcName" />
+                              <TableColumn fx:id="deliveryDate1" prefWidth="166.0" text="deliveryDate" />
+                              <TableColumn fx:id="returnDate1" prefWidth="86.0" text="returnDate" />
+                              <TableColumn fx:id="repairCost1" prefWidth="104.0" text="repairCost" />
+                              <TableColumn fx:id="returnStatus1" prefWidth="88.0" text="returnStatus" />
+                              <TableColumn fx:id="spcID1" prefWidth="77.0" text="spcID" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            </tabs>
+        </TabPane>
+        <Button layoutX="1125.0" layoutY="260.0" mnemonicParsing="false" onAction="#logOut" text="Log out" />
+      <Button layoutX="216.0" layoutY="260.0" mnemonicParsing="false" onAction="#fillTable" text="Refresh" />
+      <Button layoutX="455.0" layoutY="260.0" mnemonicParsing="false" onAction="#checkOutstanding" text="Check Outstanding" />
+      <Button layoutX="583.0" layoutY="259.0" mnemonicParsing="false" onAction="#createQuery" text="Create Query" />
+      <Button layoutX="283.0" layoutY="259.0" mnemonicParsing="false" onAction="#sendVehicle" text="Send Vehicle" />
+      <Button layoutX="377.0" layoutY="259.0" mnemonicParsing="false" onAction="#sendPart" text="Send Part" />
+    </children>
+</Pane>

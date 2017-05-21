@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="277.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Chris.AddSPCPartsController">
+   <children>
+      <TextField fx:id="aspcPartName" alignment="CENTER" layoutX="112.0" layoutY="100.0" promptText="PartName" />
+      <Text layoutX="10.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Part Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="aspcPartDescription" alignment="CENTER" layoutX="112.0" layoutY="139.0" promptText="Description" />
+      <Text layoutX="10.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="18.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Part" textAlignment="CENTER" wrappingWidth="239.404296875">
+         <font>
+            <Font name="Cambria" size="36.0" />
+         </font>
+      </Text>
+      <TextField fx:id="acustomerID" alignment="CENTER" layoutX="112.0" layoutY="178.0" promptText="CustomerID" />
+      <Text layoutX="10.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="10.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="afirstName" alignment="CENTER" layoutX="112.0" layoutY="217.0" promptText="firstName" />
+      <Button fx:id="addPart" layoutX="178.0" layoutY="545.0" mnemonicParsing="false" onAction="#addPart" text="Add Part" />
+      <Button layoutX="18.0" layoutY="545.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+      <TextField fx:id="adeliveryDate" alignment="CENTER" layoutX="113.0" layoutY="331.0" promptText="Delivery Date" />
+      <Text layoutX="11.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery Date">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="12.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return Date">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="areturnDate" alignment="CENTER" layoutX="114.0" layoutY="371.0" promptText="Return Date" />
+      <TextField fx:id="alastName" alignment="CENTER" layoutX="113.0" layoutY="253.0" promptText="lasatName" />
+      <Text layoutX="11.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="11.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SPC Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="aspcName" alignment="CENTER" layoutX="113.0" layoutY="292.0" promptText="spcName" />
+      <Text layoutX="12.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Repair Cost (£)">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="arepairCost" alignment="CENTER" layoutX="115.0" layoutY="404.0" promptText="12.34" />
+      <Text layoutX="12.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Returned">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="areturnStatus" alignment="CENTER" layoutX="115.0" layoutY="442.0" promptText="y/n" />
+      <Text layoutX="13.0" layoutY="498.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SPC ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="aspcID" alignment="CENTER" layoutX="116.0" layoutY="480.0" promptText="SPC ID" />
+   </children>
+</Pane>

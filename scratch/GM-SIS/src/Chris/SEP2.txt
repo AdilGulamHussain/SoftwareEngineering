@@ -1,0 +1,25 @@
+TODO:
+SPCController make sure they are admin to do stuff
+change controllers on fxmls
+add onclicks to each button
+controllers for all buttons
+fix SPCController
+
+add delivery and return dates to spcparts and vehicles.java and spc controller
+
+req 8 if (return status =1 ) load it in to query
+add spc name to parts and vehicles
+search by vehicle to see repairs on it
+search be vehicle reg or customer name/surname
+counter how many records if 10 cant add more
+
+how do you get repair cost?
+add spcID to database
+
+check controllers used on edit controllers
+
+check getSelected method
+
+auto increment ids
+
+search by reg or name

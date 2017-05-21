@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="277.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Chris.EditSPCVehicleController">
+   <children>
+      <TextField fx:id="bvehicleRegistrationNumber" alignment="CENTER" layoutX="112.0" layoutY="59.0" promptText="AB01 CDE" />
+      <TextField fx:id="bmodel" alignment="CENTER" layoutX="112.0" layoutY="100.0" promptText="Model" />
+      <Text layoutX="9.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration No." wrappingWidth="97.87109375">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="10.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Model">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="bmake" alignment="CENTER" layoutX="112.0" layoutY="139.0" promptText="Make" />
+      <Text layoutX="10.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Make">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="18.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Vehicle" textAlignment="CENTER" wrappingWidth="239.404296875">
+         <font>
+            <Font name="Cambria" size="36.0" />
+         </font>
+      </Text>
+      <TextField fx:id="bcustomerID" alignment="CENTER" layoutX="112.0" layoutY="178.0" promptText="CustomerID" />
+      <Text layoutX="10.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="10.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="bfirstName" alignment="CENTER" layoutX="112.0" layoutY="217.0" promptText="firstName" />
+      <Button fx:id="editVehiclebtn" layoutX="171.0" layoutY="513.0" mnemonicParsing="false" onAction="#editVehicle" text="Edit Vehicle" />
+      <Button fx:id="cancelbtn" layoutX="12.0" layoutY="513.0" mnemonicParsing="false" onAction="#cancelVehicle" text="Cancel" />
+      <TextField fx:id="bdeliveryDate" alignment="CENTER" layoutX="113.0" layoutY="331.0" promptText="Delivery Date" />
+      <Text layoutX="11.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery Date">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="12.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return Date">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="breturnDate" alignment="CENTER" layoutX="114.0" layoutY="371.0" promptText="Return Date" />
+      <TextField fx:id="blastName" alignment="CENTER" layoutX="113.0" layoutY="253.0" promptText="lasatName" />
+      <Text layoutX="11.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="11.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SPC Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="bspcName" alignment="CENTER" layoutX="113.0" layoutY="292.0" promptText="spcName" />
+      <Text layoutX="12.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Repair Cost (£)">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="brepairCost" alignment="CENTER" layoutX="115.0" layoutY="404.0" promptText="12.34" />
+      <Text layoutX="12.0" layoutY="456.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Returned">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="breturnStatus" alignment="CENTER" layoutX="115.0" layoutY="438.0" promptText="y/n" />
+      <Text layoutX="12.0" layoutY="489.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SPC ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="bspcID" alignment="CENTER" layoutX="115.0" layoutY="471.0" promptText="SPC ID" />
+   </children>
+</Pane>

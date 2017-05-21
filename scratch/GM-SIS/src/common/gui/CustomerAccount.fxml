@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane minHeight="0.0" minWidth="0.0" prefHeight="507.0" prefWidth="897.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.logic.CustomerController">
+    <children>
+        <TableView fx:id="customerTable" layoutX="12.0" layoutY="85.0" prefHeight="160.0" prefWidth="877.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="92.00001525878906" text="Customer ID" />
+                <TableColumn fx:id="fName" prefWidth="90.0" text="FirstName" />
+                <TableColumn fx:id="sName" text="LastName" />
+                <TableColumn fx:id="add" prefWidth="146.0" text="Address" />
+                <TableColumn fx:id="postcode" prefWidth="75.0" text="PostCode" />
+                <TableColumn fx:id="phone" prefWidth="126.0" text="Phone" />
+                <TableColumn fx:id="email" prefWidth="154.0" text="Email" />
+                <TableColumn fx:id="type" prefWidth="112.0" text="Account Type" />
+            </columns>
+        </TableView>
+        <Text layoutX="22.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Account">
+            <font>
+                <Font name="Cambria" size="36.0" />
+            </font>
+        </Text>
+        <TextField fx:id="search_bar" layoutX="590.0" layoutY="48.0" onAction="#search" promptText="Search" />
+        <Button layoutX="23.0" layoutY="259.0" mnemonicParsing="false" onAction="#add" text="Add Customer" />
+        <Button layoutX="134.0" layoutY="260.0" mnemonicParsing="false" onAction="#edit" text="Edit" />
+        <Button layoutX="190.0" layoutY="259.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+        <TabPane layoutX="16.0" layoutY="295.0" prefHeight="200.0" prefWidth="877.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Vehicle">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView fx:id="vehicleTable" layoutY="-1.0" prefHeight="173.0" prefWidth="877.0">
+                                    <columns>
+                                        <TableColumn fx:id="reg" prefWidth="137.0" text="Vehicle Registration" />
+                                        <TableColumn fx:id="model" minWidth="9.0" prefWidth="55.0" text="Model" />
+                                        <TableColumn fx:id="make" minWidth="0.0" prefWidth="52.0" text="Make" />
+                                        <TableColumn fx:id="size" minWidth="4.0" prefWidth="77.0" text="Engine Size" />
+                                        <TableColumn fx:id="fuel" prefWidth="59.0" text="Fuel Type" />
+                                        <TableColumn fx:id="colour" minWidth="0.0" prefWidth="50.0" text="Colour" />
+                                        <TableColumn fx:id="mot" prefWidth="117.0" text="MOT renewalDate" />
+                                        <TableColumn fx:id="last" prefWidth="122.0" text="Last Service Change" />
+                                        <TableColumn fx:id="mile" prefWidth="110.0" text="Current Mileage" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Booking">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView fx:id="bookingTable" layoutX="-4.0" layoutY="-2.0" prefHeight="175.0" prefWidth="882.0">
+                                    <columns>
+                                        <TableColumn fx:id="bookingID" prefWidth="75.0" text="Booking ID" />
+                                        <TableColumn fx:id="vehicle" prefWidth="75.0" text="Vehicle ID" />
+                                        <TableColumn fx:id="bookingType" prefWidth="94.0" text="Booking Type" />
+                                        <TableColumn fx:id="date" prefWidth="91.0" text="Date" />
+                                        <TableColumn fx:id="spc" prefWidth="118.0" text="SPC" />
+
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Parts">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView fx:id="partTable" prefHeight="173.0" prefWidth="830.0">
+                                    <columns>
+                                        <TableColumn fx:id="vehicleID" prefWidth="75.0" text="Vehicle" />
+                                        <TableColumn fx:id="partBookingID" prefWidth="75.0" text="Booking" />
+                                        <TableColumn fx:id="name" prefWidth="140.0" text="Part Installation Date" />
+                                        <TableColumn fx:id="desc" minWidth="0.0" prefWidth="121.0" text="Warranty Date" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Bill">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView fx:id="billTable" layoutX="-5.0" prefHeight="172.0" prefWidth="885.0">
+                                    <columns>
+                                        <TableColumn fx:id="billID" prefWidth="75.0" text="ID" />
+                                        <TableColumn fx:id="billBookingID" prefWidth="75.0" text="Booking" />
+                                        <TableColumn fx:id="price" prefWidth="75.0" text="Total Cost" />
+                                        <TableColumn fx:id="paid" prefWidth="75.0" text="Amount Paid" />
+                                        <TableColumn fx:id="balance" prefWidth="75.0" text="Balance" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+      <Button layoutX="253.0" layoutY="260.0" mnemonicParsing="false" onAction="#fillTable" text="Refresh" />
+    </children>
+</Pane>

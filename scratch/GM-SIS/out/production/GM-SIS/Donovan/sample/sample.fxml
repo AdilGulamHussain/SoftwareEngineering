@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane minHeight="0.0" minWidth="0.0" prefHeight="580.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Donovan.common.logic.RepairController">
+    <children>
+        <TableView fx:id="bookingTable" layoutX="12.0" layoutY="128.0" prefHeight="200.0" prefWidth="905.0">
+            <columns>
+            <TableColumn fx:id="fname" prefWidth="85.0" text="FirstName" />
+            <TableColumn fx:id="sname" prefWidth="85.0" text="Surname" />
+                <TableColumn fx:id="bid" prefWidth="85.0" text="Booking ID" />
+            <TableColumn id="reg" fx:id="vreg" prefWidth="140.0" text="Vehicle Reg" />
+                <TableColumn fx:id="bType" prefWidth="142.0" text="Booking Type" />
+                <TableColumn fx:id="Date" prefWidth="77.0" text="Date" />
+                <TableColumn fx:id="SPC" prefWidth="84.0" text="SPC" />
+                <TableColumn fx:id="Part" prefWidth="88.0" text="Part" />
+            <TableColumn fx:id="complete" prefWidth="99.0" text="Complete" />
+            <TableColumn id="costs" fx:id="costs" prefWidth="81.0" text="Costs" />
+
+            </columns>
+        </TableView>
+        <Text layoutX="22.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diagnosis and Repairs / Scheduled Maintenance">
+            <font>
+                <Font name="Cambria" size="36.0" />
+            </font>
+        </Text>
+
+        <Button layoutX="834.0" layoutY="70.0" mnemonicParsing="false" text="Enter" />
+
+        <Button fx:id="addbooking1" layoutX="22.0" layoutY="337.0" mnemonicParsing="false" onAction="#addB" text="Add" />
+        <Button fx:id="editbooking1" layoutX="126.0" layoutY="337.0" mnemonicParsing="false" onAction="#editB" text="Edit" />
+        <Button fx:id="deletebooking1" layoutX="229.0" layoutY="337.0" mnemonicParsing="false" onAction="#deleteB" text="Delete" />
+      <TextField fx:id="search_bar" layoutX="700.0" layoutY="70.0" onAction="#Search" prefWidth="120.0" promptText="Search" />
+      <Button fx:id="refresh" layoutX="815.0" layoutY="339.0" mnemonicParsing="false" onAction="#refresh" text="Refresh" />
+      <TabPane layoutX="12.0" layoutY="392.0" prefHeight="134.0" prefWidth="905.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Vehicle">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                                              <TableView fx:id="vehicleTable" layoutY="-1.0" prefHeight="173.0" prefWidth="905.0">
+                                                  <columns>
+                                                      <TableColumn fx:id="reg" prefWidth="137.0" text="Vehicle Registration" />
+                                                      <TableColumn fx:id="model" minWidth="9.0" prefWidth="55.0" text="Model" />
+                                                      <TableColumn fx:id="make" minWidth="0.0" prefWidth="52.0" text="Make" />
+                                                      <TableColumn fx:id="size" minWidth="4.0" prefWidth="77.0" text="Engine Size" />
+                                                      <TableColumn fx:id="fuel" prefWidth="59.0" text="Fuel Type" />
+                                                      <TableColumn fx:id="colour" minWidth="0.0" prefWidth="50.0" text="Colour" />
+                                                      <TableColumn fx:id="mot" prefWidth="117.0" text="MOT renewalDate" />
+                                                      <TableColumn fx:id="last" prefWidth="122.0" text="Last Service Change" />
+                                                      <TableColumn fx:id="mile" prefWidth="110.0" text="Current Mileage" />
+                                                  </columns>
+                                              </TableView>
+                                          </children>
+                                      </AnchorPane>
+            </content>
+          </Tab>
+          <Tab id="customer" text="Customer">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                                           <TableView fx:id="customerTable" layoutY="-1.0" prefHeight="173.0" prefWidth="877.0">
+                                                  <columns>
+                                                     <TableColumn fx:id="id" prefWidth="92.00001525878906" text="Customer ID" />
+                                                                     <TableColumn fx:id="fName" prefWidth="90.0" text="FirstName" />
+                                                                     <TableColumn fx:id="sName" text="LastName" />
+                                                                     <TableColumn fx:id="add" prefWidth="146.0" text="Address" />
+                                                                     <TableColumn fx:id="postcode" prefWidth="75.0" text="PostCode" />
+                                                                     <TableColumn fx:id="phone" prefWidth="126.0" text="Phone" />
+                                                                     <TableColumn fx:id="email" prefWidth="154.0" text="Email" />
+                                                                     <TableColumn fx:id="type" prefWidth="112.0" text="Account Type" />
+                                                  </columns>
+                                              </TableView>
+                                          </children>
+                                      </AnchorPane>
+            </content>
+          </Tab>
+          <Tab id="mechanic" text="Mechanic">
+                      <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                         <children>
+                                                     <TableView fx:id="mechanicTable" layoutY="-1.0" prefHeight="173.0" prefWidth="877.0">
+                                                            <columns>
+                                                               <TableColumn fx:id="mName" prefWidth="147.00001525878906" text="Name" />
+                                                                               <TableColumn fx:id="duration" prefWidth="131.0" text="Duration" />
+                                                            </columns>
+                                                        </TableView>
+                                                    </children>
+                                                </AnchorPane>
+                      </content>
+                    </Tab>
+        </tabs>
+      </TabPane>
+    </children>
+</Pane>

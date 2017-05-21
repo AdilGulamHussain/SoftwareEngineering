@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane minHeight="0.0" minWidth="0.0" prefHeight="658.0" prefWidth="825.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bogdan.src.vehicleRecords.AddVehicleController">
+    <children>
+        <TableView fx:id="templateTable" layoutX="12.0" layoutY="85.0" prefHeight="503.0" prefWidth="457.0">
+            <columns>
+                <TableColumn fx:id="Model" prefWidth="97.0" text="Model" />
+                <TableColumn fx:id="Make" prefWidth="68.0" text="Make" />
+                <TableColumn fx:id="Engine" prefWidth="102.0" text="Engine Size" />
+                <TableColumn fx:id="Fuel" prefWidth="94.0" text="Fuel Type" />
+            <TableColumn fx:id="TemplateID" prefWidth="97.0" text="TemplateID" />
+            </columns>
+        </TableView>
+        <Text fx:id="title" layoutX="22.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Vehicle">
+            <font>
+                <Font name="Cambria" size="36.0" />
+            </font>
+        </Text>
+        <Button layoutX="635.0" layoutY="455.0" mnemonicParsing="false" onAction="#add" text="Add Vehicle" />
+        <Button layoutX="517.0" layoutY="455.0" mnemonicParsing="false" onAction="#importTemplate" text="Import Template" />
+        <Button fx:id="refreshTemplate" layoutX="184.0" layoutY="606.0" mnemonicParsing="false" onAction="#refreshTemplate" text="Refresh Templates" />
+      <Text layoutX="509.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration Number" />
+      <Text layoutX="553.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer ID" />
+      <Text layoutX="584.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Model" />
+      <Text layoutX="558.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Engine Size" />
+      <Text layoutX="567.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fuel Type" />
+      <Text layoutX="582.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Colour" />
+      <Text layoutX="517.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MOT Renewal Date" />
+      <Text layoutX="534.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Mileage" />
+      <TextField fx:id="NumberIn" layoutX="633.0" layoutY="88.0" />
+      <TextField fx:id="CustomerIn" layoutX="633.0" layoutY="128.0" />
+      <TextField fx:id="ModelIn" layoutX="633.0" layoutY="168.0" />
+      <TextField fx:id="EngineIn" layoutX="633.0" layoutY="248.0" />
+      <TextField fx:id="FuelIn" layoutX="633.0" layoutY="288.0" />
+      <TextField fx:id="ColourIn" layoutX="633.0" layoutY="328.0" />
+      <TextField fx:id="MOTIn" layoutX="633.0" layoutY="368.0" />
+      <TextField fx:id="MileIn" layoutX="633.0" layoutY="408.0" />
+      <Text layoutX="589.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Make" />
+      <TextField fx:id="MakeIn" layoutX="633.0" layoutY="208.0" />
+      <Text layoutX="516.0" layoutY="525.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Warranty Company" />
+      <Text layoutX="536.0" layoutY="605.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Warranty Expiry" />
+      <TextField fx:id="warrantyCompany" layoutX="633.0" layoutY="508.0" />
+      <TextField fx:id="warrantyExpiry" layoutX="633.0" layoutY="588.0" />
+      <Text layoutX="524.0" layoutY="565.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Warranty Address" />
+      <TextField fx:id="warrantyAddress" layoutX="633.0" layoutY="548.0" />
+    </children>
+</Pane>

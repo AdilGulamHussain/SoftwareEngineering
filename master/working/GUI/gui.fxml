@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="571.0" prefWidth="921.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.logic.AdminController">
+   <children>
+      <Pane fx:id="home_screen" layoutX="190.0" layoutY="140.0" prefHeight="200.0" prefWidth="200.0" />
+      <TabPane layoutX="7.0" prefHeight="571.0" prefWidth="921.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="Customer_Tab" text="Customer Account">
+            <content>
+                <fx:include source="customer/CustomerAccount.fxml"/>
+            </content>
+          </Tab>
+          <Tab fx:id="Vehicle_Tab" text="Vehicle Record">
+            <content>
+                <fx:include source="vehicle/vehicleGUI.fxml"/>
+            </content>
+          </Tab>
+            <Tab fx:id="Booking_Tab " text="Diagnosis and Repair bookings">
+              <content>
+                  <fx:include source="booking/sample.fxml"/>
+              </content>
+            </Tab>
+            <Tab fx:id="Parts_Tab" text="Parts">
+              <content>
+                  <fx:include source="parts/OrderPart.fxml"/>
+              </content>
+            </Tab>
+            <Tab fx:id="SPC_Tab" text="Specialist Repairs">
+              <content>
+                  <fx:include source="SPC/SPC.fxml"/>
+              </content>
+            </Tab>
+            <Tab fx:id="Admin_Tab" text="Admin">
+              <content>
+                 <fx:include source="customer/admin.fxml" />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="571.0" prefWidth="1210.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.logic.AdminController">
+   <children>
+      <Pane fx:id="home_screen" layoutX="190.0" layoutY="140.0" prefHeight="200.0" prefWidth="200.0" />
+      <TabPane layoutX="7.0" prefHeight="571.0" prefWidth="1203.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Customer Account">
+            <content>
+                <fx:include source="CustomerAccount.fxml" />
+            </content>
+          </Tab>
+          <Tab text="Vehicle Record">
+            <content>
+                <fx:include fx:id="vehicleTab" source="../../Bogdan/src/gui/vehicleGUI.fxml" />
+            </content>
+          </Tab>
+            <Tab text="Diagnosis and Repair bookings">
+              <content>
+                <fx:include fx:id="DNR" source="../../Donovan/sample/sample.fxml" />
+              </content>
+            </Tab>
+            <Tab text="Parts">
+              <content>
+                  <fx:include fx:id="parts" source="../../Parts/src/PartsLogic/PartsMainTest.fxml" />
+              </content>
+            </Tab>
+            <Tab text="Specialist Repairs">
+              <content>
+                  <fx:include fx:id="spc" source="../../Chris/SPC.fxml" />
+              </content>
+            </Tab>
+            <Tab fx:id="Admin_Tab" text="Admin">
+              <content>
+                 <fx:include source="../../Chris/User.fxml" />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button layoutX="814.0" mnemonicParsing="false" onAction="#logOut" prefHeight="33.0" prefWidth="106.0" text="Log Out" />
+   </children>
+</Pane>
